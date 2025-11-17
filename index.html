@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="img/my_logo.gif" alt="Мой логотип"></div>
+  
+  <input type="checkbox" id="burger-toggle" class="burger-toggle">
+  <label for="burger-toggle" class="burger">☰</label>
+  
+  <nav class="nav">
+    <ul class="nav_list">
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#presentation">Презентация</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#reviews">Мои сильные стороны</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="grid-container">
+  <main>
+    <section class="about">
+      <h1>Обо мне</h1>
+      <p>Меня зовут Игорь. Я начинающий frontend‑разработчик, который уверенно работает с HTML и CSS, уделяя особое внимание доступности, структурированности и кроссбраузерности кода. Вёрстка для меня — это не просто визуальное оформление, а создание удобного и логичного интерфейса, где каждая деталь имеет своё место.</p>
+      <p>Мой путь в IT начался с разработки и продвижения сайтов. С 2010 года я создавал проекты с нуля, занимался их SEO и оптимизацией, что дало мне понимание того, как интерфейс и структура сайта влияют на результат поисковой выдачи. Этот опыт помогает мне смотреть на frontend не только глазами разработчика, но и глазами пользователя и заказчика.</p>
+      <p>Сейчас я активно развиваюсь в направлении frontend‑разработки. JavaScript является для меня следующей целью. Для его изучения я закладываю прочную основу: изучаю специфику CSS, принципы адаптивной вёрстки и лучшие практики организации кода. Моя цель — стать специалистом, который умеет создавать интерфейсы, сочетающие техническую надёжность и удобство для пользователей.</p>
+    </section>
+    
+    <section id="presentation" class="presentation">
+      <h2>Презентация</h2>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="video/intro.mp4" type="video/mp4">
+          Ваш браузер не поддерживает тег video.
+        </video>
+      </div>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Портфолио</h2>
+      <div class="portfolio-grid">
+        
+        <article class="card">
+          <img src="img/project_1.jpg" alt="Project 1">
+          <h3>Проект 1</h3>
+          <p>Простой сайт для продажи типовых печатей и штампов в городе Минске. Оформлен в нежном розовом стиле. Есть возможность заказа через форму обратной связи.</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/project_2.jpg" alt="Project 2">
+          <h3>Проект 2</h3>
+          <p>Пожалуй это один из самых сложных проектов, в котором были реализованы такие функии как: раскрывающееся меню, видео-контент, аудио сопровождение, интерактивная карта, форма обратной связи с загрузкой файлов, клиентский мессенджер jivosite, акции со счётчиком времени и т.д.</p>
+          <span class="best_project">BEST project</span> <span class="work_project">WORKS</span> 
+        </article>
+        
+        <article class="card">
+          <img src="img/project_3.jpg" alt="Project 3">
+          <h3>Проект 3</h3>
+          <p>Типичный лендинг для продажи услуг по изготовлению печатей и штампов. Сайт ориентирован на быстрое оформление заказа. Выбрав интересующий вид продукта можно совершить заказ буквально за пару кликов!</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/project_4.jpg" alt="Project 4">
+          <h3>Проект 4</h3>
+          <p>Сайт-визитка, содержащий несколько страниц с информацией о предоставляемых видах услуг. Основная его цель обратная связь с клиентами.</p>
+          <span class="last_project">LAST project</span> <span class="work_project">WORKS</span>       
+        </article>
+        
+        <article class="card">
+          <img src="img/project_5.jpg" alt="Project 5">
+          <h3>Проект 5</h3>
+          <p>Сайт-визитка, посвящён свадебнной тематике. Своеобразное меню разбросано по всей странице, каждый пункт которого сопровождается тематическими фотогалереями.</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/project_6.jpg" alt="Project 6">
+          <h3>Проект 6</h3>
+          <p>Сайт-магазин. Учитывая специфику работы продавца необходимо было реализовать каталог и форму для заказа.</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/project_7.jpg" alt="Project 7">
+          <h3>Проект 7</h3>
+          <p>Сайт-каталог для оптовой продажи дверей и фурнитуры.</p>
+        </article>
+        
+        <article class="card">
+          <img src="img/project_8.jpg" alt="Project 8">
+          <h3>Проект 8</h3>
+          <p>Сайт-визитка, содержащий небольшой каталог консервированной продукции собственного производства. Оригинально выполненное меню в виде весёлых овощей пришлось по вкусу заказчику!</p>                   
+        </article>
+        
+        <article class="card">
+          <img src="img/project_9.jpg" alt="Project 9">
+          <h3>Проект 9</h3>
+          <p>Сайт-визитка для привлечения клиентов, закупающих отдельные виды фанеры. Оригинально подобранный логотип отражает суть деятельности заказчика - первого поставщика фанеры в Беларуси.</p>
+        </article>
+      </div>
+    </section>
+    
+    <section id="reviews">
+      <h2>Мои сильные стороны</h2>
+    <ul class="strong_side_list">
+      <li>Внимание к деталям и стремление к чистому, понятному коду.</li>
+      <li>Опыт SEO и понимание влияния структуры сайта на продвижение.</li>
+      <li>Умение объяснять и документировать решения для команды.</li>
+      <li>Настойчивость в обучении и желание осваивать новые технологии.</li>
+    </ul>
+    </section>
+  </main>
+  
+  <aside id="contacts">
+    <h3>Контакты</h3>
+    <p>Телефон: +375 (29) 111-22-33</p>
+    <p>Email: <a href="mailto: igorao2802@gmail.com">igorao2802@gmail.com</a></p>
+  </aside>
+</div>
+
+<footer>
+  <p>&copy; Все права защищены. И.А. Осадчий, 2025</p>
+  <audio controls>
+    <source src="audio/rock.mp3" type="audio/mp3">
+    Ваш браузер не поддерживает тег audio.
+  </audio>
+</footer>
+
+</body>
+</html>

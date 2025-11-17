@@ -1,0 +1,222 @@
+/* ===== CSS RESET ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 1rem; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f0f0f0;
+  height: 10rem;
+}
+
+.logo {
+  display: flexbox;
+  overflow: hidden;
+  border-radius: 30% 70% 500% 70%;
+  scale: 30%;
+  min-width: 25rem;
+  max-height: 25rem;
+  margin-left: -10rem;
+}
+
+.nav_list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* скрытый чекбокс */
+.burger-toggle {
+  display: none;
+}
+
+/* иконка-бургер */
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ===== GRID LAYOUT ===== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about p {
+  text-align: justify;
+  text-indent: 2.5em;
+}
+
+aside {
+  background: #fafafa;
+  padding: 1rem;
+  border-left: 2px solid #ddd;
+}
+
+main section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Чередование секций */
+main section:nth-child(odd) { background: #f9f9f9; }
+main section:nth-child(even) { background: #ffffff; }
+
+/* ===== VIDEO ===== */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== PORTFOLIO GRID ===== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.card h3, .card p {
+  text-align: center;
+}
+
+/* :has() выделение проектов */
+.card:has(.best_project) {
+  border-left: 2px solid #ff0022;
+  border-top: 2px solid #ff0022;
+}
+
+.card:has(.last_project) {
+  border-left: 2px solid #046e10;
+  border-top: 2px solid #046e10;
+}
+
+.card:has(.work_project) {
+  border-right: 2px solid #0914b1;
+  border-bottom: 2px solid #0914b1;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+.card img:hover {
+  filter: grayscale(100%);
+}
+
+.best_project {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .2rem .5rem;
+  background: #ff0022;
+  color: white;
+  font-size: .8rem;
+}
+
+.last_project {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .2rem .5rem;
+  background: #046e10;
+  color: white;
+  font-size: .8rem;
+}
+
+.work_project {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .2rem .5rem;
+  background: #0914b1;
+  color: white;
+  font-size: .8rem;
+}
+
+.strong_side_list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.strong_side_list li {
+  padding: .2rem .2rem;
+  border-style: outset;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+audio {
+  width: 100%;
+  filter: invert(100%);
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+  
+  .nav_list {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #f0f0f0;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+  }
+  
+  .burger-toggle:checked + .burger + nav .nav_list {
+    display: flex;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
