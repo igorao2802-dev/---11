@@ -1,4 +1,4 @@
-/* ===== CSS RESET ===== */
+/* ---- обнуляем CSS ---- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { font-size: 1rem; }
 body { font-family: Arial, sans-serif; line-height: 1.6; }
@@ -7,7 +7,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
   transition: 0.25s ease;
 }
 
-/* ===== HEADER ===== */
+/* ---- HEADER ---- */
 header {
   display: flex;
   justify-content: space-between;
@@ -68,7 +68,7 @@ h1, h2, h3 {
   color: #fff;
 }
 
-/* ===== GRID LAYOUT ===== */
+/* ---- GRID LAYOUT ---- */
 .grid-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -116,7 +116,7 @@ main section:nth-child(odd) {
 }
 main section:nth-child(even) { background: #fff; }
 
-/* ===== VIDEO ===== */
+/* ---- видео ---- */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ video {
   height: auto;
 }
 
-/* ===== PORTFOLIO GRID ===== */
+/* ---- портфолио в GRID ---- */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -138,7 +138,6 @@ video {
 .card {
   background: #fff;
   padding: 1rem;
-  /*border: 1px solid #ccc;*/
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: 0.3s;
@@ -153,7 +152,7 @@ video {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* :has() выделение проектов */
+/* выделение особенных проектов */
 .card:has(.best_project) {
   border-left: 2px solid #ff0022;
   border-top: 2px solid #ff0022;
@@ -223,7 +222,7 @@ video {
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-/* ===== FOOTER ===== */
+/* ---- FOOTER ---- */
 footer {
   background: #333;
   color: white;
@@ -239,7 +238,7 @@ audio {
   filter: invert(100%);
 }
 
-/* ===== MEDIA QUERIES ===== */
+/* ---- настройка адаптивности MEDIA ---- */
 @media (max-width: 1200px) {
   .portfolio-grid {
    grid-template-columns: repeat(2, 1fr);
@@ -259,7 +258,6 @@ audio {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-
 
   .burger {
     display: block;
@@ -291,5 +289,4 @@ audio {
 .strong_side_list {
   grid-template-columns: 1fr;
 }
-
 }
