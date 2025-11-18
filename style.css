@@ -33,13 +33,18 @@ h1, h2, h3 {
 }
 .nav {
   position: relative;
-  display: none;
 }
 
 .nav_list {
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
+}
+
+.nav_list li {
+  line-height: 1;
+  min-width: 80px;
 }
 
 .nav_list a {
@@ -93,6 +98,10 @@ aside {
   border-radius: 8px;
   padding: 1.5rem 2rem 2rem;
   border-left: 2px solid #f86115;
+}
+
+#contacts span {
+  white-space: nowrap;
 }
 
 .course {
@@ -262,7 +271,9 @@ audio {
   .burger {
     display: block;
   }
-  
+  .nav {
+   display: none;
+  }
   .nav_list {
     display: none;
     flex-direction: column;
