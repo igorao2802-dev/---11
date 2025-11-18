@@ -83,7 +83,7 @@ main section:nth-child(even) { background: #ffffff; }
 
 video {
   max-width: 100%;
-  height: auto;
+  height: 500px;
 }
 
 /* ===== PORTFOLIO GRID ===== */
